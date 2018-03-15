@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import search from '@/components/tabs/search'
 import home from '@/components/tabs/home'
-import pdb from '@/components/tabs/pdb'
+import view from '@/components/tabs/view'
 import login from '@/components/tabs/login'
 
 Vue.use(Router)
@@ -20,9 +20,9 @@ export default new Router({
       component: search
     },
     {
-      path: '/PDB',
-      name: 'pdb',
-      component: pdb
+      path: '/View',
+      name: 'view',
+      component: view
     },
     {
       path: '/Login',

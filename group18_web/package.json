@@ -1,7 +1,7 @@
 {
-  "name": "symposia_web",
+  "name": "group18_web",
   "version": "1.0.0",
-  "description": "Front end for Symposia",
+  "description": "Front end for Group18",
   "author": "extrajoss <michael.joss@gmail.com>",
   "private": true,
   "scripts": {

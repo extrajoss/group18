@@ -1,7 +1,6 @@
 const express = require('express')
 const router = express.Router()
 const models = require('../models')
-const fs = require('fs-extra')
 
 const DEFAULT_LIMIT = 100
 const DEFAULT_OFFSET = 0
@@ -10,21 +9,6 @@ const DEFAULT_OFFSET = 0
 router.get('/all', async (req, res, next) => {
   const allNobleGasBindings = await models.noble_gas_bindings.findAll()
   res.json(allNobleGasBindings)
-})
-
-router.get('/dataServerTest', async (req, res, next) => {
-  let localFile = new Promise(function (resolve, reject) {
-    fs.readFile('/Users/jos031/Code/Repos/group18_web/resources/js/dataserverExample.js', function (err, data) {
-      if (err) {
-        reject(err)
-      } else {
-        resolve(data)
-      }
-    })
-  })
-  res.setHeader('content-type', 'text/javascript')
-  res.write(await localFile)
-  res.end()
 })
 
 router.get('/search', async (req, res, next) => {

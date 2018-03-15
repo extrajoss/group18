@@ -2,7 +2,7 @@
   "sequelize_options":{
     "database": "group18",
     "username": "root",
-    "password": "",
+    "password": "VIZBI+ruleztheworld!FBiA",
     "host": "www.odonoghuelab.org",
     "dialect": "mysql",
     "pool": {
@@ -15,5 +15,44 @@
       "underscored": true,
       "paranoid": true
     }
-  }
-}
+  },
+  
+  "port"					: "8081",
+  "https_port"				: false,
+  "ssl_key"				: "cert/wildcard.it.csiro.au.key",
+  "ssl_cert"				: "cert/wildcard.it.csiro.au.crt",
+  "log"					:{
+    "level" 			: "debug"
+            },
+  "aquaria"				:{
+    "UNIPROT_FILE_PATH" 		: "http://aquaria.ws"
+            },
+  "jolecule"				:{
+    "SPACIAL_CUTOFF" 		: 2,
+    "MAP_FILE_PATH" 		: "http://hpc.csiro.au/users/272675/airliquide/mapfiles",
+    "MAP_SHARED_FILE_PATH" 		: false ,
+    "PDB_FILE_PATH" 		: "http://files.rcsb.org/pub/pdb/data/structures/divided/pdb",
+    "PREPROCESSING_SCRIPT"  	: "/jolecule/autodock2pdbES5.js",
+    "JOL_STATIC_SCRIPT" 		: "/jolecule/jol-static.js",
+    "NOBLE_GAS_SYMBOLS" 		: ["He", "Ne", "Ar", "Kr", "Xe"],
+    "ENERGY_CUTOFF_SETS" 		: {
+      "high"			: [-0.4, -0.4, -0.9, -0.9, -1.3],
+      "medium"		: [-0.3, -0.3, -0.8, -0.8, -1.2],
+      "low"			: [-0.3, -0.3, -0.6, -0.6, -0.8],
+      "veryHigh"		: [-0.6, -0.6, -1.2, -1.2, -1.5]
+            },
+    "MAX_ENERGY_CUTOFF" 		: -0.5,
+    "MIN_ENERGY_CUTOFF" 		: -2.0
+            },
+  "web"					:{
+    "baseWebsite"			:"http://group18.csiro.au",
+    "baseStatic"			:"/Users/jos031/Code/Repos/group18/group18_db/public",
+    "MAX_CACHE_SIZE" 		: 500000,
+    "helpDocument"			:"https://docs.google.com/document/d/1jLpzLvHNIwmnzuLMfgerGgbYSdKGLez2ivL3ViTULss/pub",
+    "defaultSpreadsheet"		:{
+      "element"		: "He", 
+      "ligand"		: "withLigand", 
+      "energy"		: "high"
+    }
+  }	
+}	 

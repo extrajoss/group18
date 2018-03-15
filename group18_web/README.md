@@ -1,6 +1,6 @@
-# symposia_web
+# group18_web
 
-> Front end for Symposia
+> Front end for group18
 
 ## Build Setup
 

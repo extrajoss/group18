@@ -34,6 +34,9 @@ module.exports = {
 
     // https://webpack.js.org/configuration/devtool/#development
     devtool: 'eval-source-map',
+    externals: {
+      jolecule: 'jolecule'
+    },
 
     // If you have problems debugging vue-files in devtools,
     // set this to false - it *may* help

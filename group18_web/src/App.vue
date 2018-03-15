@@ -5,7 +5,7 @@
       </md-tab>
       <md-tab id="tab-search" md-label="Search" to="/search">
       </md-tab>
-      <md-tab id="tab-pdb" md-label="PDB" to="/pdb">
+      <md-tab id="tab-view" md-label="View" to="/view">
       </md-tab>
       <md-tab id="tab-login" md-label="Login" to="/login">
       </md-tab>

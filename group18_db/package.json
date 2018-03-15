@@ -1,5 +1,5 @@
 {
-  "name": "symposia-db",
+  "name": "group18-db",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -7,16 +7,24 @@
   },
   "dependencies": {
     "body-parser": "~1.18.2",
-    "config": "^1.28.1",
+    "config": "^1.30.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "ejs": "~2.5.7",
     "express": "~4.15.5",
+    "fs-extra": "^5.0.0",
+    "lodash": "^4.17.5",
     "morgan": "~1.9.0",
+    "mustache": "^2.3.0",
     "mysql2": "^1.5.2",
-    "sequelize": "^4.22.15",
-    "sequelize-cli": "^3.1.0",
+    "nopt": "^4.0.1",
+    "numeral": "^2.0.6",
+    "object-sizeof": "^1.2.0",
+    "opener": "^1.4.3",
+    "sequelize": "^4.36.1",
+    "sequelize-cli": "^3.2.0",
     "serve-favicon": "~2.4.5",
-    "standard": "^10.0.3"
+    "standard": "^10.0.3",
+    "zlib": "^1.0.5"
   }
 }

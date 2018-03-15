@@ -31,7 +31,7 @@
       </md-table-empty-state>
       <md-table-row slot="md-table-row" slot-scope="{ item }">
         <md-table-cell md-label="Element" md-sort-by="element">{{ item.element }}</md-table-cell>
-        <md-table-cell md-label="PDB" md-sort-by="pdb"><a :href="`http://group18.csiro.au/${item.pdb}`">{{ item.pdb }}</a></md-table-cell>
+        <md-table-cell md-label="PDB" md-sort-by="pdb"><a :href="`/#/view?pdb=${item.pdb}`">{{ item.pdb }}</a></md-table-cell>
         <md-table-cell md-label="N Atoms" md-numeric md-sort-by="n_atoms">{{ item.n_atoms }}</md-table-cell>
         <md-table-cell md-label="Binding Energy" md-numeric  md-sort-by="binding_energy">{{ item.binding_energy }}</md-table-cell>
         <md-table-cell md-label="Ligand" md-sort-by="ligand_name">{{ item.ligand_name }}</md-table-cell>
