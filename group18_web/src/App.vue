@@ -1,25 +1,28 @@
 <template>
   <div id="app">
-    <md-tabs md-sync-route>
-      <md-tab id="tab-home" md-label="Home" to="/home">
-      </md-tab>
-      <md-tab id="tab-search" md-label="Search" to="/search">
-      </md-tab>
-      <md-tab id="tab-view" md-label="View" to="/view">
-      </md-tab>
-      <md-tab id="tab-login" md-label="Login" to="/login">
-      </md-tab>
-    </md-tabs>
+    <v-app>
+    <v-tabs dark>
+      <v-tab id="tab-home" to="/home" router>Home
+      </v-tab>
+      <v-tab id="tab-search" to="/search" router>Search
+      </v-tab>
+      <v-tab id="tab-view" to="/view" router>View
+      </v-tab>
+      <v-tab id="tab-login" to="/login" router>Login
+      </v-tab>
+    </v-tabs>
     <router-view/>
+    </v-app>
   </div>
 </template>
 
 <script>
 import Vue from 'vue'
-import VueMaterial from 'vue-material'
-import 'vue-material/dist/vue-material.min.css'
-import 'vue-material/dist/theme/black-green-light.css'
-Vue.use(VueMaterial)
+import Vuetify from 'vuetify'
+
+import 'vuetify/dist/vuetify.min.css'
+ 
+Vue.use(Vuetify)
 
 Window.Event = new Vue()
 
@@ -35,6 +38,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0px;
 }
 </style>

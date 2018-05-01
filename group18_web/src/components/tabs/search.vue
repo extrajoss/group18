@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class="md-layout md-gutter md-alignment-top-center">
-    <div class="md-layout-item md-size-95">
+    <div class="v-layout v-gutter v-alignment-top-center">
+    <div class="v-layout-item v-size-95">
 <search-form></search-form>  
 </div>
-  <div class="md-layout-item md-size-95">
+  <div class="v-layout-item v-size-95">
 <search-list></search-list> 
 </div>
 </div>
@@ -23,9 +23,5 @@ import searchList from '@/components/search/search-list'
   </script>
   
   <style scoped>
-    .md-layout-item {
-    margin-top: 8px;
-    margin-bottom: 8px;
-    }
   </style>
 

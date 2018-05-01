@@ -18,7 +18,7 @@ const _ = require('lodash');
 
 const dataServerMustache = `
 
-define(function() {
+(function() {
 
 var result = {
   get_protein_data: function(loadProteinData) {

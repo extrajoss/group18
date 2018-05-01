@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import VeeValidate from 'vee-validate'
+import store from './store'
 
 Vue.config.productionTip = false
 Vue.use(VeeValidate);
@@ -11,6 +12,7 @@ Vue.use(VeeValidate);
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: { App }
 })

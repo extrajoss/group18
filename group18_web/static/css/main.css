@@ -1,0 +1,10 @@
+#jolecule_image{
+  height:400px;
+  width:600px;
+}
+.container.grid-list-xl{
+  padding:0px !important;
+}
+.menuable__content__active{
+  z-index: 101 !important;
+}
